@@ -14,19 +14,27 @@
   <canvas id="dataChart"></canvas>
 </body>
 <script>
-  // Firebase configuration
-  var firebaseConfig = {
-      apiKey: "AIzaSyAK30qKMDZ5b4OL-ewZDK3csNg4vdZ8nec",
-      authDomain: "esp32-electronics-simplified.firebaseapp.com",
-      databaseURL: "https://esp32-electronics-simplified-default-rtdb.asia-southeast1.firebasedatabase.app",
-      projectId: "esp32-electronics-simplified",
-      storageBucket: "esp32-electronics-simplified.appspot.com",
-      messagingSenderId: "622348255925",
-      appId: "1:622348255925:web:cd9d59c33ea388720ff4fc"
-    };
+ <script type="module">
+  // Import the functions you need from the SDKs you need
+  import { initializeApp } from "https://www.gstatic.com/firebasejs/10.10.0/firebase-app.js";
+  // TODO: Add SDKs for Firebase products that you want to use
+  // https://firebase.google.com/docs/web/setup#available-libraries
+
+  // Your web app's Firebase configuration
+  const firebaseConfig = {
+    apiKey: "AIzaSyCky2i_zfx_qlw5qRg5btmpaVd6aKzNGl0",
+    authDomain: "fir-to-webpage-check.firebaseapp.com",
+    projectId: "fir-to-webpage-check",
+    storageBucket: "fir-to-webpage-check.appspot.com",
+    messagingSenderId: "1011854835003",
+    appId: "1:1011854835003:web:701946ffa3ae7b313b0b1e"
+  };
 
   // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+  const app = initializeApp(firebaseConfig);
+</script>
+
+<script>
 
   var database = firebase.database();
 
